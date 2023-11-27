@@ -1,0 +1,311 @@
+/* Custom CSS */
+body {
+  font: 400 15px/1.8 Lato, sans-serif;
+  color: #777;
+}
+
+.person:hover {
+  border-color: #FF0000;
+}
+
+.carousel-inner img {
+  width: 100%;
+  margin: 50px 0 0 0;
+}
+
+.carousel-caption h1 {
+  color: white !important;
+}
+
+.navbar {
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 0;
+  border: 0;
+  font-size: 14px !important;
+  letter-spacing: 10px;
+}
+
+.navbar-nav{
+  margin-top: 1em;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #d5d5d5 !important;
+}
+
+.navbar-nav li a:hover {
+  color: #fff !important;
+}
+
+.navbar-nav li.active a {
+  color: #fff !important;
+  background-color: #FF0000 !important;
+}
+
+.open .dropdown-toggle {
+
+  color: #fff;
+  background-color: #555 !important;
+}
+.dropdown-menu li a {
+  color: #999999 !important;
+}
+.dropdown-menu li a:hover {
+  background-color: red !important;
+
+}
+
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 50px;
+}
+.navbar-right .dropdown-menu {
+    right: 0;
+    left: 0;
+}
+  
+
+
+/* estilos del formulario */
+
+.formulario{
+  background-color: rgba(0,0,0,0.4);
+}
+#contacto{
+  padding-top: 50px;
+}
+.section-caja h2 {
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+}
+.section-caja {
+  background-color: #2980B9;
+  padding: 70px 0 0 0;
+  text-align: center;
+  z-index: 1;
+}
+
+
+.section-contacto {
+  background-color: #2980B9;
+  position: relative;
+  padding: 0 0 50px 0;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.section-contacto input {
+  margin: 0 auto;
+  border-radius: 0;
+  height: 50px;
+  border: 0;
+  width: 80%;
+}
+
+.section-contacto textarea {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 0;
+  height: 150px;
+  border: 0;
+  resize: none;
+}
+
+
+.title-border {
+  border: 0px solid white;
+  padding: 20px 15px 20px 15px;
+  width: 300px;
+  margin: 0 auto;
+  background-color: red;
+  border-radius: 5px;
+}
+
+.form-group label, label{
+  font-size: 2em;
+}
+#Nombre{
+  margin-top: 25px;
+}
+.boton-enviar button{
+  background:rgba(0,0,0,0.4);
+  text-decoration: none;
+  color:#fff;
+  text-transform: uppercase;
+  padding: 10px 70px; 
+  letter-spacing: 1px;
+  width: 80%;
+  border: 0;
+}
+
+.boton-enviar button:hover{
+  background: #371854;
+  color:#fff;
+}
+
+.correr button{
+  padding: 15px 0;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+/*pie de pantalla
+*/
+
+footer#pie{
+  padding: 5em 0;
+}
+footer#pie h3{
+  color: #fff;
+  font-size: 1em;
+}
+ul#datos{
+  padding-left: 0;
+}
+#datos{
+  margin: 8em auto 1em;
+}
+#datos li{
+  list-style: none;
+}
+#datos li a{
+  color: #00bfff;
+  text-decoration: none;
+}
+#datos li a:hover{
+  color: #fff
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+#colorb{
+  background: linear-gradient(-45deg, #080223, #210739, #02131e, #330000);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+
+}
+
+
+
+@media only screen and (max-width: 520px) {
+.form-group label, label{
+  font-size: 1em;
+}
+#Nombre{
+  margin-top: 20px;
+}
+.section-caja {
+  background-color: #2980B9;
+  padding: 40px 0 0 0;
+  text-align: center;
+  z-index: 1;
+}
+}
+
+@media only screen and (max-height: 1024px){
+#datos{
+  margin: 2em auto 1em;
+}
+}
+
+@media only screen and (min-width: 715px){
+#datos{
+  margin: 8em auto 1em;
+}
+}
+
+
+h1{
+
+    text-align: center;
+    color: darkgreen;
+    margin-top: 5px;
+}
+h2 {
+    text-align: center;
+}
+
+h4 {
+
+    color: brown;
+    text-align: center;
+}
+
+#tarjeta {
+
+    border: solid 1px #000000;
+    border-radius:5px 10px 10px 10px; 
+    box-shadow: 5px 5px 15px gray;
+    background: rgba(151, 151, 153, 0.247);
+    /* background: linear-gradient(35deg, rgba(221, 68, 221, 0.276) 27%, rgba(57, 255, 90, 0.334) 44%); */
+
+}
+#tarjeta3 {
+
+    border: solid 1px #000000;
+    border-radius:5px 10px 10px 10px; 
+    box-shadow: 5px 5px 15px gray;
+    background: rgba(151, 151, 153, 0.92);
+  
+   
+
+}
+
+.contenedorQR {
+	display: flex;
+	justify-content: center;
+	padding: 40px 0;
+}
+
+span {
+    
+    color:cadetblue;
+    font-style: italic;
+
+
+}

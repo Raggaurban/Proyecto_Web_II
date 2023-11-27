@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>PAGINA WEB VISION VIRTUAL</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos jue.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos art.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos for.css">
+  <link rel="icon" type="img/png" sizes="32x32" href="img/favicon.png">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <section id="colorb">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <div class="logo col-md-10">
+        <img src="img/logo.png" class="img-responsive"> 
+      </div>
+      </div>
+    
+    
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="inicio.html">Inicio</a></li>
+      <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="inicio.html">
+            Historia
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+        <li><a href="inicio.html" href="#historia" href="#informacion">Infórmate</a></li>
+        <li><a href="inicio.html">Galería</a></li>
+        </ul>
+          </li>
+        <li><a href="#juegos">Juegos</a></li>
+      <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="art.html">Artículos
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+        <li><a href="art.html">Educación</a></li>
+        <li><a href="art.html" href="#fondo3">Tipos</a></li>
+        <li><a href="art.html" href="#Problemas">Problemas</a></li>
+        </ul>
+          </li>
+          <li><a href="formulario.html">Contactos</a></li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </section>
+</nav>
+
+<!-- seccion juegos -->
+
+<section id="juegos">
+  <div id="fondo1" class="container-fluid">
+    <section class="container" id="robot">
+      <div class="row">
+        <div class="columnas2">
+          <div class="col-md-6 texto2">
+            <h1>Realidad aumentada</h1>    
+            <p>Un videojuego de realidad aumentada es un género de videojuego, caracterizado por la utilización de la superposición de diferentes tipos información sobre el mundo real en donde se usa la realidad virtual.</p>
+          </div>
+          <div class="col-md-6">
+            <img class="img-responsive" src="img/juegos-2.png">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container" id="armas">
+      <div class="row">
+        <div class="columnas2">
+          <div class="col-md-6">
+            <img class="img-responsive" src="img/juegos-3.png">
+          </div>
+          <div class="col-md-6 texto2">
+            <h1>Juego de realidad mixta</h1>    
+            <p>Según la definición para realidad mixta de Paul Milgram y Fumio Kishino para el Virtuality Continuum, los juegos de realidad virtual no son juegos de realidad mixta, porque tienen lugar sólo en la realidad virtual.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+
+<!-- pie de pantalla -->
+
+<section id="colorb">
+<footer id="pie">
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-12 text-center">
+            <img src="img/logo.png"> 
+          </div>
+          <ul id="datos">
+            <li><a href="incio.html">Bienvenido a un mundo virtual</a></li>
+            <li><a href="http://www.facebook.com">Revista vision virtual primera edición</a></li>
+            <li><a href="http://www.gmail.com">mundovirtual@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-lg-12 text-center">
+          <h3>APRENDE MAS JUNTO A NOSOTROS</h3>
+          <a href="http://www.youtube.com" target="_blank"><img src="img/youtube.png"></a>
+          <a href="http://www.facebook.com" target="_blank"><img src="img/facebook.png"></a>
+          <a href="http://www.twitter.com" target="_blank"><img src="img/twtter.png"></a>
+          <a href="http://www.whattsapp.com" target="_blank"><img src="img/whatts.png"></a>
+        </div>
+      </div>
+    </div>
+</footer>
+</section>
+
+
+
+
+
+
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+	<!-- Inicio codigo del menu hamburguesa -->
+	<script type="text/javascript">
+	$('#header').prepend('<div id="menu-icon"><span class="first"></span><span class="second"></span><span class="third"></span></div>');
+	
+	$("#menu-icon").on("click", function(){
+    $("nav").slideToggle();
+    $(this).toggleClass("active");
+	});
+	</script>
+	<!-- fin codigo del menu hamburguesa -->
+
+	<!-- Scirpt para el efecto scroll o ruleta - funciona con el jquery normal-->
+	<script type="text/javascript">
+	$(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+	</script>
+
+	<!-- javascript para el boton top la flchita que aparece sutilmente en la parte inferior derecha-->
+	<script type="text/javascript">
+	var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+	</script>
+
+
+</body>
+</html>
